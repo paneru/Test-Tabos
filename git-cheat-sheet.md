@@ -18,12 +18,12 @@ Listing the branches
 ```bash
 git branch
 ```
-
+```console
 *branch-1
  master
  exp-1
  exp-2
-
+```
 we have four branches here.
 
 Switching to different branch (e.g to exp-2 branch)
