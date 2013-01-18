@@ -3,6 +3,15 @@
 GIT QUICK REFERENCE GUIDE #GITCheatSheet
 ===========================================
 
+Creating new branch
+-------------------
+
+Create new branch called exp-1
+
+```bash
+git branch exp-1
+```
+
 Listing the branches
 --------------------
 
@@ -29,7 +38,6 @@ We can return to master by doing:
 git checkout master
 ```
 
-
 Pushing the local branch to GitHub
 ----------------------------------
 
@@ -37,6 +45,15 @@ If you have to push the exp-2 branch to the Github
 
 ```bash
 git push -u origin exp-2
+```
+
+Deleting local/experimental branch
+----------------------------------
+
+If you have to delete the exp-2 branch
+
+```bash
+git branch -d exp-2
 ```
 
 Deleting remote branch on GitHub
