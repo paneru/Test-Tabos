@@ -39,6 +39,21 @@ If you have to push the exp-2 branch to the Github
 git push -u origin exp-2
 ```
 
+Deleting remote branch on GitHub
+--------------------------------
+
+If you have to delete the exp-2 branch on the Github repo
+
+```bash
+git push origin :exp-2
+```
+
+OR
+
+```bash
+git push origin --delete exp-2
+```
+
 
 If you have to push the master branch to the Github
 
