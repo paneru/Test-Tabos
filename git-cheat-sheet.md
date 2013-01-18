@@ -72,7 +72,8 @@ git push origin --delete exp-2
 ```
 
 
-If you have to push the master branch to the Github
+Push the MASTER branch to the Github
+------------------------------------
 
 ```bash
 git push -u origin master
