@@ -45,3 +45,20 @@ If you have to push the master branch to the Github
 ```bash
 git push -u origin master
 ```
+
+Adding new file
+---------------
+
+```bash
+git add new-file.txt
+```
+
+Commiting new file
+------------------
+
+```bash
+git commit -m "Message to add here" new-file.txt
+```
+
+
+
