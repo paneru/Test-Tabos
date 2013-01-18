@@ -1,7 +1,7 @@
 
 
-GIT CHEAT SHEET
-===============
+GIT QUICK REFERENCE GUIDE #GITCheatSheet
+===========================================
 
 Listing the branches
 --------------------
@@ -37,4 +37,11 @@ If you have to push the exp-2 branch to the Github
 
 ```bash
 git push -u origin exp-2
+```
+
+
+If you have to push the master branch to the Github
+
+```bash
+git push -u origin master
 ```
