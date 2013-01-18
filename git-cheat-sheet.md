@@ -32,7 +32,7 @@ Switching to different branch (e.g to exp-2 branch)
 git checkout exp-2
 ```
 
-We can return to master by doing:
+Return back to MASTER:
 
 ```bash
 git checkout master
