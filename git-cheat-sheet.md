@@ -18,13 +18,15 @@ Listing the branches
 ```bash
 git branch
 ```
+
+We have four branches here:
+
 ```console
 *branch-1
  master
  exp-1
  exp-2
 ```
-we have four branches here.
 
 Switching to different branch (e.g to exp-2 branch)
 
@@ -81,6 +83,8 @@ git push -u origin master
 
 Adding new file
 ---------------
+
+This adds the new file to your current branch.
 
 ```bash
 git add new-file.txt
