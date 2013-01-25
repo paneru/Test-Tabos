@@ -1,0 +1,28 @@
+{
+    "name": "Tabos",
+    "description": "Travel Agent Back Office System",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "travel",
+        "back office"
+    ],
+    "homepage": "http://paneru.com/",
+    "require": {
+        "php": ">=5.4.0",
+	    "zendframework/zendframework": ">=2.0",
+        "phpunit/phpunit": "3.7.*",
+        "phpunit/dbunit": ">=1.2",
+
+        "mockery/mockery": "dev-master#4a98af96454515d576eda64e3222efa71b2704c6",
+        "davedevelopment/hamcrest-php": "dev-master"
+    },
+
+    "minimum-stability": "dev",
+    "config": {
+        "bin-dir": "behat/"
+    },
+
+    "autoload": {
+        "psr-0": {"Ifp": "src/"}
+    }
+}
