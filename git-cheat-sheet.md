@@ -12,6 +12,16 @@ Create new branch called exp-1
 git branch exp-1
 ```
 
+Renaming existing branch
+------------------------
+
+Rename new branch exp-1 to feature-4 (Only perform this after adding and commiting all updates on exp-1 otherwise the result may be unexpected)
+
+```bash
+git branch -m exp-1 feature-4
+```
+
+
 Listing the branches
 --------------------
 
@@ -95,7 +105,28 @@ Commiting new file
 
 ```bash
 git commit -m "Message to add here" new-file.txt
+
+Merge the changes
+-----------------
+
+If you wish to merge commited changes of story#3 into your master
+
+```bash
+git checkout master
+git merge issue#3
 ```
 
+Viewing the log messages
+------------------------
 
+If you wish to view clean log 5 lined commited messages
 
+```bash
+git log -5 --pretty=oneline
+```
+
+If you wish to view clean log 5 lined commited messages with extra information like author and time when it was commited
+
+```bash
+git log -5 --pretty=format:"%h - %an, %ar : %s"
+```
