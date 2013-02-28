@@ -105,6 +105,7 @@ Commiting new file
 
 ```bash
 git commit -m "Message to add here" new-file.txt
+```
 
 Merge the changes
 -----------------
