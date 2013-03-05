@@ -1,2 +1,3 @@
 MASTER: The very first line from MASTER Branch.
 MASTER: The very first line from MASTER Branch. (COMMIT 2)
+MASTER: The very first line from MASTER Branch. (COMMIT 3)
