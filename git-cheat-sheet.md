@@ -12,6 +12,16 @@ Create new branch called exp-1
 git branch exp-1
 ```
 
+Downloading/pulling existing remote branch to local repo
+--------------------------------------------------------
+
+Pull/Download remote branch called BB-35 as BB-35-PP. Command below also checks out into the new branch i.e BB-35-PP
+
+```bash
+git checkout -b BB-35-PP
+git pull origin BB-35:BB-35-PP
+```
+
 Renaming existing branch
 ------------------------
 
