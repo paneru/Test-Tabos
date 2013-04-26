@@ -18,9 +18,39 @@ Downloading/pulling existing remote branch to local repo
 Pull/Download remote branch called BB-35 as BB-35-PP. Command below also checks out into the new branch i.e BB-35-PP
 
 ```bash
-git checkout -b BB-35-PP
-git pull origin BB-35:BB-35-PP
+git checkout -b BB-35 origin/BB-35-PP
 ```
+If you have error:
+
+```bash
+fatal: git checkout: updating paths is incompatible with switching branches/forcing
+Did you intend to checkout ‘origin/‘ which can not be resolved as commit?’
+```
+
+Then try the pull first and try above command
+
+```bash
+git pull
+```
+
+Undo the merge
+--------------
+
+If you wanted to undo the merge, please do the following:
+
+```bash
+git pull $REMOTE $BRANCH
+# uh that went wrong??? WTF %*4£
+git reset --hard ORIG_HEAD
+# thats's coooool
+```
+
+Find defference between your local branch and remote branch
+
+```bash
+git diff master origin/master
+```
+
 
 Renaming existing branch
 ------------------------
