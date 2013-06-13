@@ -171,3 +171,36 @@ If you wish to view clean log 5 lined commited messages with extra information l
 ```bash
 git log -5 --pretty=format:"%h - %an, %ar : %s"
 ```
+
+Migrating existing project from GitHub to BitBucket
+====================================================
+
+View actual URL aliases for you local repo
+------------------------------------------
+
+```bash
+git remote
+git remote -v
+```
+
+Detach your local repo from GitHub
+----------------------------------
+
+```bash
+git remote rm origin
+```
+
+Create a GIT project (myproject) in BitBucket (Simply logon to BitBucket and follow instructions)
+
+Add/Initilise your project to BitBucket
+---------------------------------------
+
+```bash
+cd /path/to/your/local/repo
+git remote add origin https://username@bitbucket.org/username/myproject.git
+git push -u origin master
+```
+
+Viola!! (Its done and your first commit is listed on BitBucket)
+
+
