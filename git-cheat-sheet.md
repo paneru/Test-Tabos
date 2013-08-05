@@ -198,9 +198,24 @@ Add/Initilise your project to BitBucket
 ```bash
 cd /path/to/your/local/repo
 git remote add origin https://username@bitbucket.org/username/myproject.git
+```
+
+Finally push your project to BitBucket
+---------------------------------------
+
+```bash
 git push -u origin master
 ```
 
 Viola!! (Its done and your first commit is listed on BitBucket)
+
+Re-link to new repo if the project has be created on Bitbucket
+--------------------------------------------------------------
+
+This is useful if your team member has updated the repo on Bitbucket
+
+```bash
+git remote set-url origin https://<username>@bitbucket.org/<projectName>/<projectName>.git
+```
 
 
