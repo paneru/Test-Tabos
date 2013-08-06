@@ -209,7 +209,7 @@ git push -u origin master
 
 Viola!! (Its done and your first commit is listed on BitBucket)
 
-Re-link to new repo if the project has be created on Bitbucket
+Re-link to new repo if the project has been created on Bitbucket
 --------------------------------------------------------------
 
 This is useful if your team member has updated the repo on Bitbucket
@@ -236,7 +236,7 @@ if you see the key then you can copy the key by running follwing on terminal.
 ```bash
 xclip -sel clip < ~/.ssh/id_rsa.pub
 ```
-(** xclip is application that needs to be installed before using it. Run on CLI: sudo apt-get install xclip)
+(** xclip is an application that needs to be installed before using it. Run on CLI to install: sudo apt-get install xclip)
 
 Once the public key is copied in your clipboard, head over to bitbucket and add SSH keys under Account Management. Give it a name that best describes the location of your computer.
 
@@ -254,7 +254,7 @@ sudo gedit .git/config
 
 You will need to replace HTTPS link with:
 
-url = git@bitbucket.org:<accountname_you_joining>/<reponame>.git
+url = git@bitbucket.org:AccountName/RepoName.git
 
 OR,
 
