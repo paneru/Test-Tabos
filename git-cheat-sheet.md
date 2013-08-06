@@ -214,8 +214,53 @@ Re-link to new repo if the project has be created on Bitbucket
 
 This is useful if your team member has updated the repo on Bitbucket
 
+(Using https):
+--------------
 ```bash
 git remote set-url origin https://<username>@bitbucket.org/<projectName>/<projectName>.git
 ```
+
+(Using SSH):
+------------
+We have to generate private and public key to start with.
+If we already have one, we can simply use the public key and add it to the Bitbucket.
+
+Check to see if the public ket exists:
+
+```bash
+cat ~/.ssh/id_rsa.pub
+```
+
+if you see the key then you can copy the key by running follwing on terminal.
+
+```bash
+xclip -sel clip < ~/.ssh/id_rsa.pub
+```
+(** xclip is application that needs to be installed before using it. Run on CLI: sudo apt-get install xclip)
+
+Once the public key is copied in your clipboard, head over to bitbucket and add SSH keys under Account Management. Give it a name that best describes the location of your computer.
+
+
+Now verify the configuration by running the command on terminal.
+
+```bash
+ssh -T git@bitbucket.org
+```
+If output shows your bitbucket username, then you are ready to edit your GIT config file on your computer.
+
+```bash
+sudo gedit .git/config
+```
+
+You will need to replace HTTPS link with:
+
+url = git@bitbucket.org:<accountname_you_joining>/<reponame>.git
+
+OR,
+
+url = git@bitbucket.org:weareifp/bluebird.git
+
+Save and close the file. Its all done for you.
+
 
 
