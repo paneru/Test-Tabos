@@ -266,5 +266,16 @@ or SSH: url = ssh://git@bitbucket.org/weareifp/bluebird.git
 
 Save and close the file. Its all done for you.
 
+WORKING WITH .gitignore
+=======================
+
+To add files/directory that we want to be ignored, please use following:
+(say we want to ignore 'application.db.php' file)
+
+```bash
+echo "application.db.php" >> .gitignore
+```
+
+We can simply open the file on your favourite editor as well. Above command is quick to implement.
 
 
