@@ -223,7 +223,7 @@ git remote set-url origin https://<username>@bitbucket.org/<projectName>/<projec
 (Using SSH):
 ------------
 We have to generate private and public key to start with.
-If we already have one, we can simply use the public key and add it to the Bitbucket.
+If we already have one, we can simply use the public key and add it to the Bitbucket. Bitbucket can also use deployment keys which is read only. Deployment keys are useful for server instances.
 
 Check to see if the public ket exists:
 
@@ -256,9 +256,13 @@ You will need to replace HTTPS link with:
 
 url = git@bitbucket.org:AccountName/RepoName.git
 
+or SSH: url = ssh://git@bitbucket.org/AccountName/RepoName.git
+
 OR,
 
 url = git@bitbucket.org:weareifp/bluebird.git
+
+or SSH: url = ssh://git@bitbucket.org/weareifp/bluebird.git
 
 Save and close the file. Its all done for you.
 
