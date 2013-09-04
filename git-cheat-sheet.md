@@ -254,6 +254,11 @@ sudo gedit .git/config
 
 You will need to replace HTTPS link with:
 
+```bash
+git remote set-url origin git@bitbucket.org:paneru/zf2AuthSha.git
+git remote set-url origin git@bitbucket.org:weareifp/walt.git
+```
+
 url = git@bitbucket.org:AccountName/RepoName.git
 
 or SSH: url = ssh://git@bitbucket.org/AccountName/RepoName.git

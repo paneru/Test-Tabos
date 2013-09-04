@@ -1,3 +1,6 @@
 config
 ignore-test.html
-/nbproject/private/
+/nbproject/private/git-cheat-sheet.md~
+nbproject/
+vendor/
+git-cheat-sheet.md~
