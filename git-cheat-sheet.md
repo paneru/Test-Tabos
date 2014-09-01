@@ -3,6 +3,13 @@
 GIT QUICK REFERENCE GUIDE #GITCheatSheet
 ===========================================
 
+Clone new branch as 'disney'
+----------------------------
+
+```bash
+git clone git://github.com/zendframework/ZendSkeletonApplication.git disney --recursive
+```
+
 Creating new branch
 -------------------
 
