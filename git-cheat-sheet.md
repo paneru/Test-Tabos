@@ -301,3 +301,23 @@ Otherwise if you need to ignore a file already under version control, update the
 git update-index --assume-unchanged <files>
 ```
 
+or
+--
+
+Even if you haven't tracked the files so far, git seems to be able to "know" about them even after you add them to .gitignore. 
+A quick fix that I've used was to run the following commands from the top folder of your git repo:
+
+```bash
+git rm -r --cached .
+```
+Followed by:
+
+```bash
+git add .
+```
+and
+```bash
+git commit -m "fixed untracked files"
+```
+This should fix your problem.
+
