@@ -290,4 +290,14 @@ echo "application.db.php" >> .gitignore
 
 We can simply open the file on your favourite editor as well. Above command is quick to implement.
 
+Ignoring files
+--------------
+
+.gitignore only applies to untracked files. If you are tracking a .pyc then .gitignore won't apply. Remove the .pyc with git rm and next time you do a git status it (and any others) won't show up in the list of untracked file and nor will it be automatically added.
+
+Otherwise if you need to ignore a file already under version control, update the index to ignore changes to files already under version control:
+
+```bash
+git update-index --assume-unchanged <files>
+```
 
