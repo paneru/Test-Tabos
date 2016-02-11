@@ -207,6 +207,13 @@ cd /path/to/your/local/repo
 git remote add origin https://username@bitbucket.org/username/myproject.git
 ```
 
+OR
+
+```bash
+cd /path/to/your/local/repo
+git remote add origin https://bitbucket.org/username/myproject.git
+```
+
 Finally push your project to BitBucket
 ---------------------------------------
 
